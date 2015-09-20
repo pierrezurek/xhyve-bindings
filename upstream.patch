@@ -13,7 +13,7 @@ index 4f85664..6f83463 100644
 +#define MAIN main
 +#endif
 diff --git a/upstream/src/xhyve.c b/upstream/src/xhyve.c
-index 97fd41f..5de8dc4 100644
+index aced4e2..a622581 100644
 --- a/upstream/src/xhyve.c
 +++ b/upstream/src/xhyve.c
 @@ -72,6 +72,10 @@
@@ -36,3 +36,4 @@ index 97fd41f..5de8dc4 100644
  {
  	int c, error, gdb_port, bvmcons, fw;
  	int dump_guest_memory, max_vcpus, mptgen;
+
