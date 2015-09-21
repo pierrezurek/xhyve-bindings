@@ -8,9 +8,11 @@ clean-patch:
 
 clean:
 	$(RM) ./main/goxhyve
-
+	$(RM) $(GOPATH)/bin/goxhyve
 build: clean
 	go build -o ./main/goxhyve ./main
 
 install: build
 	cp ./main/goxhyve $(GOPATH)/bin/
+	sudo chown root $(GOPATH)/bin/goxhyve
+	sudo chmod +s $(GOPATH)/bin/goxhyve
